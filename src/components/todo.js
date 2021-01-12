@@ -56,10 +56,10 @@ const todo = (props) => {
         {props.getTodo ? (
           <div>
             <Row>
-              <h3>Todo List On Progrss</h3>
+              <h3>Todo List On Progress</h3>
               <BootstrapTable
                 keyField="id"
-                data={props.getTodo}
+                data={props.getGone}
                 columns={columns}
               />
             </Row>
@@ -67,7 +67,7 @@ const todo = (props) => {
               <h3>Todo List On Done</h3>
               <BootstrapTable
                 keyField="id"
-                data={props.getGone}
+                data={props.getTodo}
                 columns={columns}
               />
             </Row>
